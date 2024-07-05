@@ -1,0 +1,1 @@
+//Write a program to input one fractional number and printf the integer part and fractional part differently
