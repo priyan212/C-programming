@@ -1,0 +1,14 @@
+#include<stdio.h>
+int fun(int n,int m)
+{
+    int a=1;
+    if(m==0||n==0)
+    return 1;
+    else 
+    return n*fun(n,m-1);
+}
+void main()
+{
+    int a=fun(3,3);
+    printf("%d",a);
+}
