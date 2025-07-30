@@ -1,0 +1,22 @@
+#include<stdio.h>
+int fun(int*,int);
+void main()
+{
+    int a[]={1,2,3,4};
+    int b= sizeof(a)/4;
+    int y=fun(a,b);
+    printf("%d",y);
+}
+int fun(int *p,int x)
+{
+    int i=0;
+static int sum=0;
+    while(i<x)
+    {
+    sum= sum+ (*p);
+    printf("%d  ",sum);
+    p++;
+    i++;
+    }
+return sum;
+}
